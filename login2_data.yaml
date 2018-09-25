@@ -1,0 +1,6 @@
+test_case_001:
+    phone: "18503080305"
+    password: ""
+test_case_002:
+    phone: ""
+    password: "123456"

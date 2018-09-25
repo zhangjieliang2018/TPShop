@@ -22,12 +22,19 @@ class BaseAction:
     def input(self, location, text):
         self.find_element(location).send_keys(text)
 
-    def toast(self, message, timeout=3, poll_frequency=0.1):
-        message = By.XPATH,"//*[contains(@text,'" + message + "')]"
+    def toast1(self, message, timeout=3, poll_frequency=0.1):
+        message = By.XPATH, "//*[contains(@text,'" + message + "')]"
         try:
 
             if self.find_element(message, timeout, poll_frequency).text:
                 return True
 
+        except Exception:
+            return False
+
+    def toast2(self, login_button):
+        try:
+            if self.find_element(login_button).get_attribute('enabled') == "ture":
+                return True
         except Exception:
             return False

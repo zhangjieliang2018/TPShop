@@ -1,0 +1,28 @@
+test_case_001:
+    phone: "18503080305"
+    password: "123456"
+    toast_text: "登录成功"
+test_case_002:
+    phone: "18503080305"
+    password: "1dasd23456"
+    toast_text: "密码错误"
+test_case_003:
+    phone: "18503080305 "
+    password: "123456"
+    toast_text: "登录成功"
+test_case_004:
+    phone: " 18503080305"
+    password: "123456"
+    toast_text: "账号不存在"
+test_case_005:
+    phone: "185030803050"
+    password: "123456"
+    toast_text: "账号不存在"
+test_case_006:
+    phone: "1850308030"
+    password: "123456"
+    toast_text: "账号不存在"
+test_case_007:
+    phone: "11112222333"
+    password: "123456"
+    toast_text: "账号不存在"
